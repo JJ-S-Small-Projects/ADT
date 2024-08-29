@@ -132,10 +132,10 @@ function displayFinalSurprise() {
   surpriseLetterDiv.innerHTML = `
     <div>
       <h2>Airdroitech Presents...</h2>
-      <iframe id="surprise-video" width="560" height="315" src="https://www.youtube.com/embed/EuciKoS6Hms?autoplay=1&fs=1&enablejsapi=1"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen></iframe>
+      <div class="video-container">
+  <iframe id="surprise-video" src="https://www.youtube.com/embed/EuciKoS6Hms?autoplay=1&fs=1&enablejsapi=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
     </div>
   `;
 
