@@ -53,12 +53,14 @@ function updateCardVisibility() {
   const nextButton = document.querySelector(
     ".button-container button:last-child"
   );
+  const sendLoveDiv = document.getElementById("sendlove");
 
   messageDiv.style.display = "none";
   cards.forEach((card, index) => {
     card.style.display = "none";
   });
 
+  sendLoveDiv.style.display = "none";
   cards[currentCardIndex].style.display = "block";
 
   if (currentCardIndex === cards.length - 1) {
@@ -127,11 +129,7 @@ function moveButtonAway() {
 }
 
 function displayFinalSurprise() {
-  const sendLoveDiv = document.getElementById("sendlove");
   const surpriseLetterDiv = document.getElementById("surprise-letter");
-
-  // Hide the sendLoveDiv when the final surprise is displayed
-  sendLoveDiv.style.display = "none";
 
   surpriseLetterDiv.innerHTML = `
     <div>
