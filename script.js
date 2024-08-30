@@ -127,7 +127,12 @@ function moveButtonAway() {
 }
 
 function displayFinalSurprise() {
+  const sendLoveDiv = document.getElementById("sendlove");
   const surpriseLetterDiv = document.getElementById("surprise-letter");
+
+  // Hide the sendLoveDiv when the final surprise is displayed
+  sendLoveDiv.style.display = "none";
+
   surpriseLetterDiv.innerHTML = `
     <div>
       <h2>Airdroitech Presents...</h2>
