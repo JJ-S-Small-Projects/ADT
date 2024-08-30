@@ -17,7 +17,6 @@ function handleButtonClick(isYes) {
     messageDiv.style.color = "white";
 
     sendLoveDiv.innerHTML = '<img src="Images/dance2.gif" alt="Dance 2 GIF">';
-    sendLoveDiv.innerHTML = '<img src="Images/dance2.gif" alt="Dance 2 GIF">';
 
     // Trigger confetti three times with a delay
     let confettiCount = 0;
