@@ -143,10 +143,11 @@ button:hover {
 
 .video-container {
   position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  height: 0;
+  width: 750px; /* Adjust the width as needed */
+  height: 375px; /* Set the height explicitly for a 16:9 aspect ratio */
+  margin: 0 auto; /* Center the video */
   overflow: hidden;
+  border-radius: 30px;
 }
 
 .video-container iframe {
@@ -155,7 +156,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0; /* Optional: remove the border */
+  border-radius: 30px;
 }
 
 @keyframes fadeIn {
@@ -186,5 +187,13 @@ footer {
 
   button {
     font-size: 10px;
+  }
+  .video-container {
+    width: 350px;
+    height: 250px; /* Adjust height based on content */
+  }
+
+  .video-container iframe {
+    height: 250px;
   }
 }
